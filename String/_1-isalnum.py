@@ -47,6 +47,10 @@ class IsAlNum:
     def practiceTest_7(self, tup):
         result=tuple([str(item).isalnum() for item in tup ])
         return result
+    # 8. Set (Alphanumeric Check on Mixed Items)
+    def practiceTest_8(self, mixtup):
+        result ={str(item).isalnum() for item in mixtup}
+        return result
     
 
     
@@ -64,3 +68,4 @@ print(obj.practiceTest_4({"dog123", "cat!", "12345", "bird&"}))
 print(obj.practiceTest_5({"username": "user123", "password": "pass!@#", "id": "456abc"}))
 print(obj.practiceTest_6([["apple12", "hello123"], ["abc!", "world45"], ["xyz123", "456abc"]]))
 print(obj.practiceTest_7(("text123", 456, 789.1)))
+print(obj.practiceTest_8({123, "abc123", "hello world", 456.78}))
