@@ -87,6 +87,8 @@ class ULCTCS:
             new_set.add(elm.title())
         return new_set
     # 16. Convert List of Booleans to Strings and Apply swapcase()
+    def prictice_16(self,boo):
+        return [str(elm).swapcase() for elm in boo]
     # 17. Apply casefold() to Nested List Elements
     def practice_17(self,nest_list):
         new_list=[]
@@ -120,6 +122,7 @@ numbers = [1, 2, 3, 4]
 fruit_set = {"apple", "banana", "grape"}
 nested_list = [["HELLO", "WORLD"], ["PYTHON", "DJANGO"]]
 data_dict = {"name": "ALICE", "age": 25, "city": "NEW YORK"}
+boolean_list=[True,False,True,True,False]
 
 print(obj.practice_1(text))
 print(obj.practice_2(words))
@@ -136,6 +139,7 @@ print(obj.practice_12(data1))
 print(obj.practice_13(user_info))
 print(obj.practice_14(numbers))
 print(obj.practice_15(fruit_set))
+print(obj.prictice_16(boolean_list))
 print(obj.practice_17(nested_list))
 print(obj.practice_18(data_dict))
 
